@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+
+.app {
+  display: grid;
+  width: 75%;
+  margin: 40px auto;
+  font-family: 'Raleway', sans-serif;
+  grid-template-columns: 20% auto;
+  grid-template-rows: auto;
+  grid-gap: 40px;
+  grid-template-areas:
+    "header body"
+    "sidebar body"
+    "buttons body"
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+} 
+
+.social {
+  grid-area: buttons;
+}
+
+.main {
+  grid-area: body;
+}
+
+@media only screen and (max-width: 800px) {
+  .app {
+    grid-template-areas:
+      "header header"
+      "body body"
+      "buttons sidebar"
+  }
+  .header {
+    margin-bottom: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .app {
+    width: 100%;
+  }
+  .header {
+    margin-bottom: -30px;
+  }
+  .sidebar {
+    margin: 40px;
+    border-top: solid 1px rgba(0,0,0,0.3);
+  }
+}

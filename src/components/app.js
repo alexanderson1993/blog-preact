@@ -1,26 +1,18 @@
-import { h, Component } from 'preact';
+import { h } from 'preact';
 
-import Main from './main';
-import Sidebar from './sidebar';
-// import Home from 'async!./home';
-// import Profile from 'async!./profile';
+import Main from 'async!./main';
+import Sidebar from 'async!./sidebar';
+import Header from 'async!./header';
+import Social from 'async!./social';
 
-export default class App extends Component {
-	
-	/** Gets fired when the route changes.
-	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
-	 *	@param {string} event.url	The newly routed URL
-	 */
-	handleRoute = e => {
-		this.currentUrl = e.url;
-	};
+import style from './style.scss';
 
-	render() {
-		return (
-			<div id="app">
-				<Sidebar />
-				<Main />
-			</div>
-		);
-	}
-}
+export default () => (
+	<div className={style.app} id="app">
+		<Header className={style.header} />
+		<Sidebar className={style.sidebar} />
+		<Social className={style.social} />
+		<Main className={style.main} />
+	</div>
+);
+

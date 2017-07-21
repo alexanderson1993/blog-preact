@@ -1,8 +1,6 @@
 import { h } from 'preact';
 import style from './style.scss';
 
-console.log(style);
-
 const buttons = [{
 	title: 'Cash.me',
 	icon: 'usd',
@@ -49,7 +47,7 @@ const buttons = [{
 	link: 'http://www.twitter.com/ralex1993'
 }];
 
-export default () => <div className={style.icons}>{buttons.map(b => <Icon {...b} />)}</div>;
+export default ({ className }) => <div className={`${className} ${style.icons}`}>{buttons.map(b => <Icon {...b} />)}</div>;
 
 const Icon = ({ title, icon, link }) => {
 	const props = {

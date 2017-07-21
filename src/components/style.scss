@@ -12,7 +12,12 @@
   "header body"
   "sidebar body"
   "social body"
-  "nothing body"
+  "nothing body";
+  
+  line-height: 2;
+  img, iframe, video {
+    width: 100%;
+  }
 }
 
 .header {
@@ -28,6 +33,7 @@
 }
 
 .main {
+  width: 100%;
   grid-area: body;
 }
 

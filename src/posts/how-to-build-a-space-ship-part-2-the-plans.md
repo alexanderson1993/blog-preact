@@ -7,7 +7,7 @@ path: "/how-to-build-a-space-ship-part-2-the-plans/"
 category: "Posts"
 ---
 
-[Part 1](http://ralexanderson.com/blog/how-to-build-a-space-ship-part-1-the-background)
+[Part 1](/posts/how-to-build-a-space-ship-part-1-the-background)
 Fair warning: What follows is going to be incredibly technical, especially towards the end. 
 
 I joined the Farpoint Creative team on accident almost. I was home from my mission for one short week before I got the itch to return to flying space ships. Even more surprising was my desire to program again - I didn't think it would be something I ever wanted to do again.

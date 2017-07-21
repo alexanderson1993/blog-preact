@@ -7,7 +7,7 @@ path: "/the-feels/"
 category: "Posts"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p2wdMwpYByI" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/p2wdMwpYByI" frameborder="0" allowfullscreen></iframe>
 
 I took a trip up to Logan a few weekends ago, which in and of itself was an interesting experience. I merely want to touch on one happening.
 

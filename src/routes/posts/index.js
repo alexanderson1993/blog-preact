@@ -23,9 +23,11 @@ export default () => (<section>
 </section>);
 
 const Post = ({ title, author, date, path }) => (
+	<a className={style.title} href={`/posts${path}`}>
 	<div className={style.post}>
-		<a href={`/posts${path}`}><h3>{title}</h3></a>
-		<p>{author}</p>
+		<h3 className={style.title}>{title}</h3>
+		<p className={style.author}>{author}</p>
 		<small>Posted on: {formatDate(date)}</small>
 	</div>
+	</a>
 );

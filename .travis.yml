@@ -4,12 +4,10 @@ node_js:
 dist: trusty
 sudo: false
 script:
-  - yarn
   - yarnpkg build
-  - ls
-  - echo $PWD
 deploy:
   provider: surge
   project: ./build/
   domain: ralexanderson.com
+  skip_cleanup: true
 

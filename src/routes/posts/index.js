@@ -4,30 +4,44 @@ import posts from '../../posts/index.js';
 
 function formatDate(date) {
 	const monthNames = [
-		'Jan', 'Feb', 'Mar',
-		'Apr', 'May', 'June', 'July',
-		'Aug', 'Sept', 'Oct',
-		'Nov', 'Dec'
+		'Jan',
+		'Feb',
+		'Mar',
+		'Apr',
+		'May',
+		'June',
+		'July',
+		'Aug',
+		'Sept',
+		'Oct',
+		'Nov',
+		'Dec'
 	];
-
-	const day = date.getDate();
-	const monthIndex = date.getMonth();
-	const year = date.getFullYear();
-
-	return monthNames[monthIndex] + ' ' + day + ', ' + year;
+	if (date.getDate) {
+		const day = date.getDate();
+		const monthIndex = date.getMonth();
+		const year = date.getFullYear();
+		return monthNames[monthIndex] + ' ' + day + ', ' + year;
+	}
 }
 
-export default () => (<section>
-	<h1>Posts</h1>
-	{posts.map(p => <Post {...p} />)}
-</section>);
+export default () =>
+	<section>
+		<h1>Posts</h1>
+		{posts.map(p => <Post {...p} />)}
+	</section>;
 
-const Post = ({ title, author, date, path }) => (
+const Post = ({ title, author, date, path }) =>
 	<a className={style.title} href={`/posts${path}`}>
-	<div className={style.post}>
-		<h3 className={style.title}>{title}</h3>
-		<p className={style.author}>{author}</p>
-		<small>Posted on: {formatDate(date)}</small>
-	</div>
-	</a>
-);
+		<div className={style.post}>
+			<h3 className={style.title}>
+				{title}
+			</h3>
+			<p className={style.author}>
+				{author}
+			</p>
+			<small>
+				Posted on: {formatDate(date)}
+			</small>
+		</div>
+	</a>;

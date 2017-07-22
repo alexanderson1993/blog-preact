@@ -6,6 +6,7 @@ sudo: false
 script:
   - yarn
   - yarnpkg build
+  - ls
 deploy:
   provider: surge
   project: ./build/

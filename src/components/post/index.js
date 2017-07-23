@@ -3,6 +3,9 @@ import Markdown from 'react-markdown';
 import style from './style.scss';
 
 function formatDate(date) {
+	if (!date.getDate) {
+		date = new Date(date);
+	}
 	const monthNames = [
 		'Jan',
 		'Feb',
@@ -17,11 +20,9 @@ function formatDate(date) {
 		'Nov',
 		'Dec'
 	];
-
 	const day = date.getDate();
 	const monthIndex = date.getMonth();
 	const year = date.getFullYear();
-
 	return monthNames[monthIndex] + ' ' + day + ', ' + year;
 }
 

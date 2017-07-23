@@ -4,6 +4,9 @@ import posts from '../../posts';
 import { Link } from 'preact-router/match';
 
 function formatDate(date) {
+	if (!date.getDate) {
+		date = new Date(date);
+	}
 	const monthNames = [
 		'Jan',
 		'Feb',
@@ -18,12 +21,10 @@ function formatDate(date) {
 		'Nov',
 		'Dec'
 	];
-	if (date.getDate) {
-		const day = date.getDate();
-		const monthIndex = date.getMonth();
-		const year = date.getFullYear();
-		return monthNames[monthIndex] + ' ' + day + ', ' + year;
-	}
+	const day = date.getDate();
+	const monthIndex = date.getMonth();
+	const year = date.getFullYear();
+	return monthNames[monthIndex] + ' ' + day + ', ' + year;
 }
 
 export default () =>
@@ -32,7 +33,7 @@ export default () =>
 		{posts.map(p => <Post {...p} />)}
 	</section>;
 
-const Post = ({ title, author, date, path }) =>
+const Post = ({ title, author, date, path }) => {
 	<Link className={style.title} href={`/posts${path}`}>
 		<div className={style.post}>
 			<h3 className={style.title}>
@@ -46,3 +47,4 @@ const Post = ({ title, author, date, path }) =>
 			</small>
 		</div>
 	</Link>;
+};

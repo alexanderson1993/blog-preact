@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && yarnpkg -s serve || yarnpkg -s dev",
-    "build": "preact build",
+    "build": "preact build --template ./src/index.html",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
     "test": "eslint src && preact test"
@@ -23,9 +23,11 @@
     "sass-loader": "^6.0.6"
   },
   "dependencies": {
+    "marked": "^0.3.6",
     "preact": "^8.2.1",
     "preact-compat": "^3.16.0",
     "preact-router": "^2.5.5",
-    "react-markdown": "^2.5.0"
+    "react-markdown": "^2.5.0",
+    "rss": "^1.2.2"
   }
 }

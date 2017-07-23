@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import style from './style.scss';
-import posts from '../../posts/index.js';
+import posts from '../../posts';
+import { Link } from 'preact-router/match';
 
 function formatDate(date) {
 	const monthNames = [
@@ -32,7 +33,7 @@ export default () =>
 	</section>;
 
 const Post = ({ title, author, date, path }) =>
-	<a className={style.title} href={`/posts${path}`}>
+	<Link className={style.title} href={`/posts${path}`}>
 		<div className={style.post}>
 			<h3 className={style.title}>
 				{title}
@@ -44,4 +45,4 @@ const Post = ({ title, author, date, path }) =>
 				Posted on: {formatDate(date)}
 			</small>
 		</div>
-	</a>;
+	</Link>;

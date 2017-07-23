@@ -4,10 +4,18 @@ import style from './style.scss';
 
 function formatDate(date) {
 	const monthNames = [
-		'Jan', 'Feb', 'Mar',
-		'Apr', 'May', 'June', 'July',
-		'Aug', 'Sept', 'Oct',
-		'Nov', 'Dec'
+		'Jan',
+		'Feb',
+		'Mar',
+		'Apr',
+		'May',
+		'June',
+		'July',
+		'Aug',
+		'Sept',
+		'Oct',
+		'Nov',
+		'Dec'
 	];
 
 	const day = date.getDate();
@@ -17,11 +25,16 @@ function formatDate(date) {
 	return monthNames[monthIndex] + ' ' + day + ', ' + year;
 }
 
-console.log('Style', style);
-
-export default ({ title, author, date, content }) => (<section>
-	<h1 className={style.title}>{title}</h1>
-	<p className={style.author}>{author}</p>
-	<small>Posted on: {formatDate(date)}</small>
-	<Markdown source={content} />
-</section>);
+export default ({ title, author, date, content }) =>
+	<section>
+		<h1 className={style.title}>
+			{title}
+		</h1>
+		<p className={style.author}>
+			{author}
+		</p>
+		<small>
+			Posted on: {formatDate(date)}
+		</small>
+		<Markdown source={content} />
+	</section>;

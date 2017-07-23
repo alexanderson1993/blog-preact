@@ -33,7 +33,7 @@ export default () =>
 		{posts.map(p => <Post {...p} />)}
 	</section>;
 
-const Post = ({ title, author, date, path }) => {
+const Post = ({ title, author, date, path }) =>
 	<Link className={style.title} href={`/posts${path}`}>
 		<div className={style.post}>
 			<h3 className={style.title}>
@@ -47,4 +47,3 @@ const Post = ({ title, author, date, path }) => {
 			</small>
 		</div>
 	</Link>;
-};

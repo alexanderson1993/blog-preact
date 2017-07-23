@@ -1,9 +1,9 @@
 # R. Alex Anderson
 
 ## Education
-#### [Brigham Young University][byu] &emsp; <small>*Apr 2018 : Provo, UT*</small>
+#### [Brigham Young University][byu] &emsp; <small>*Apr 2019 : Provo, UT*</small>
 
-Bachelor of Science, Information Systems
+Masters of Science, Information Systems
 
 Minor in Graphic Design
 * GPA 3.41, ACT 33
@@ -21,7 +21,15 @@ websites to improve customer engagement and bringing in over 76,000 website page
 company wellness challenge app, mobile recipe book app, company HRIS, etc. to improve internal processes and increasing
 
 ----
-#### [Space EdVentures Foundation][spaceed] &emsp; <small>*Apr 2014 - Current : Lehi, UT*</small>
+#### [FamilySearch][familysearch] &emsp; <small>*May 2017 - Aug 2017 : Orem, UT*</small>
+
+Web Developer Intern - Search Team
+* Refactored key paged and components in Polymer 2
+* Polymer hybridized 2 interteam components to encourage sharing components between teams.
+* Developed systems of unit tests for Polymer components and POJO data models.
+
+----
+#### [Space EdVentures Foundation][spaceed] &emsp; <small>*Apr 2014 - Aug 2016 : Lehi, UT*</small>
 
 Consultant
 * Programmed computer controlled lighting, sound, and effects system for Voyager simulator
@@ -50,6 +58,9 @@ Flight Director, Programmer
 `Javascript`, `HTML`, `CSS`, `PHP`, `Angular.js`, `NodeJS`, `Meteor`
 ### Experience
 `React`, `React-Native`, `Elixir`, `GraphQL`, `SQL Server`, `MongoDB`, `Git`, `Linux`
+## Other Work
+* Developed curriculum for the WebDev Guild, a program for teaching web development to middle-school students.
+* [Thorium](thorium), a system for running highly interactive starship simulations with a focus on analytics and education.
 ## Awards
 * Hopeful winner of the Wall's Battle of the Bands Fall 2016
 
@@ -58,7 +69,9 @@ Flight Director, Programmer
 [twitter]: https://twitter.com/ralex1993
 [twit]: http://cdn-careers.sstatic.net/careers/Img/icon-twitter.png?v=b1bd58ad2034
 [byu]: http://byu.edu
+[familysearch]: https://familysearch.org
 [spaceed]: http://farpointstation.weebly.com
 [blenderbottle]: http://blenderbottle.com
 [lds]: http://lds.org
 [cmsec]: http://spacecenter.alpineschools.com
+[thorium]: https://thorium.ralexanderson.com

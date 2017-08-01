@@ -10,4 +10,3 @@ deploy:
   project: ./build/
   domain: ralexanderson.com
   skip_cleanup: true
-

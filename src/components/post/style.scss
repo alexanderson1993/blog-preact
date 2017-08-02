@@ -5,3 +5,10 @@
   margin: 0;
   line-height: 1;
 }
+.post {
+  pre, code {
+    background-color: #ddd;
+    padding: 2px;
+    border-radius: 5px;
+  }
+}

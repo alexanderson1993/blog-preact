@@ -27,7 +27,7 @@ function formatDate(date) {
 }
 
 export default ({ title, author, date, content }) =>
-	<section>
+	<section className={style.post}>
 		<h1 className={style.title}>
 			{title}
 		</h1>

@@ -13,16 +13,16 @@ Minor in Graphic Design
 ## Experience
 #### [BlenderBottle Company][blenderbottle] &emsp; <small>*Feb 2014 - Current : Lehi, UT*</small>
 
-IT Specialist
-* Performed IT Helpdesk & Support functions to ensure employees could use IT resources
-productively.
+Web Developer
 * Developed Design Your Own BlenderBottle contest, mobile recipe book app, and marketing
 websites to improve customer engagement and bringing in over 76,000 website page views.
 * Worked with internal departments to program Shipping Container Management software,
 company wellness challenge app, mobile recipe book app, company HRIS, etc. to improve internal processes.
+* Performed IT Helpdesk & Support functions to ensure employees could use IT resources
+productively.
 
 ----
-#### [Fyreworks LLC][https://fyreworks.us] &emsp;
+#### [Fyreworks LLC](https://fyreworks.us) &emsp;
 <small>*August 2017 - Current : Orem, UT*</small>
 
 Co-Founder

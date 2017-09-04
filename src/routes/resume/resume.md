@@ -22,8 +22,7 @@ company wellness challenge app, mobile recipe book app, company HRIS, etc. to im
 productively.
 
 ----
-#### [Fyreworks LLC](https://fyreworks.us) &emsp;
-<small>*August 2017 - Current : Orem, UT*</small>
+#### [Fyreworks LLC](https://fyreworks.us) &emsp;<small>*August 2017 - Current : Orem, UT*</small>
 
 Co-Founder
 * Sponsored the WebDev Guild, a program for teaching web development to middle-school students.
